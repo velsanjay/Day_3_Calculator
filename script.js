@@ -18,9 +18,14 @@ function ok(even){
     }
 }
 
-function click1(){
-    parent.innerText.slice(-1)=''
+function back(){
+    // console.log(23);
+    var v=parent.innerText.split('')
+    var a=v.pop()
+    parent.innerText=v.join('')
+    
 }
+
 
 window.addEventListener('keypress',(event)=>{
     key=event.key
